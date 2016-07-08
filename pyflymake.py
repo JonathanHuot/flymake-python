@@ -245,7 +245,7 @@ class Pep8Runner(LintRunner):
 
     @property
     def run_flags(self):
-        return '--repeat', '--ignore=' + ','.join(self.operative_ignore_codes)
+        return '--repeat', '--ignore=E501' + ','.join(self.operative_ignore_codes)
 
 
 class TestRunner(LintRunner):
